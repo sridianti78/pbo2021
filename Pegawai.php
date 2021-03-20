@@ -1,9 +1,10 @@
 <?php
     require_once("User.php");
+
     class Pegawai extends User
     {
         public $nip;
-        public $nama;
+        private $nama;
         public $no_hp;
         public $gaji_pokok;
 
@@ -17,5 +18,10 @@
         public function tampilkanGaji(){
             echo "Jumlah Gaji : $this->gaji_pokok";
         }
+
+        public function getNama()
+        {
+            return $this->nama;
+        }
     }
-?> 
+?>

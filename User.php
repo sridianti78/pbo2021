@@ -1,16 +1,32 @@
 <?php
-    class User
-    {
-        public $username;
-        public $password;
+class User{
+//atribut
+    public $username;
+    public $password;
+    protected $username;
+    protected $password;
 
-        function __construct($user, $pass){
-            $this->username = $user;
-            $this->password = $pass;
-        }
+    function __construct($username,$password){
+        $this->username = $username;
+        $this->password = $password;        
+}    
+    public function login(){
 
-        public function login(){
-            return "$this->username Anda Berhasil Login";
-        }
+        return "$this->username berhasil login";
     }
+    // setter
+    public function setUsername($username){
+        $this->nama=$username;
+    }
+    public function setPassword($password){
+        $this->nama=$password;
+    }
+    // getter
+    public function getUsername(){
+        return $this->username;
+    }
+    public function getPassword(){
+        return $this->password;
+    }
+}
 ?>

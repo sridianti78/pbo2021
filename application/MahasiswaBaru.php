@@ -1,7 +1,9 @@
 <?php
+namespace application\backend;
 require_once ("Mahasiswa.php");
 
-class MahasiswaBaru extends Mahasiswa{
+class MahasiswaBaru extends Mahasiswa
+{
     public $no_regristrasi;
     protected $no_regristrasi;
 
@@ -21,7 +23,7 @@ class MahasiswaBaru extends Mahasiswa{
     }
     // getter
     public function getNoRegristrasi(){
-        return $this->no_registrasi;
+        return $this->no_registrasi = $no_reg;
     }
 }
 ?>

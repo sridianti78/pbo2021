@@ -1,10 +1,11 @@
 <?php
-class User{
+namespace application\backend;
+
+class User
+{
 //atribut
     public $username;
     public $password;
-    protected $username;
-    protected $password;
 
     function __construct($username,$password){
         $this->username = $username;

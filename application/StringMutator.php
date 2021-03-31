@@ -1,4 +1,5 @@
 <?php
+namespace application\backend;
 
 class StringMutator  
 {

@@ -1,9 +1,9 @@
 <?php
+    require_once "initialize.php";
+    use application\backend\MyDate;
 
-require_once 'MyDate.php';
+    $the_date = new MyDate();
+    $the_date->setDay(15);
 
-$the_date = new MyDate();
-$the_date->setDay(15);
-
-echo $the_date->getDay();
+    echo $the_date->getDay();
 ?>

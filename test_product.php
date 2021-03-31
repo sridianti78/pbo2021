@@ -1,10 +1,10 @@
-<?php
+<<?php
+    require_once "initialize.php";
+    use application\backend\Product;
 
-require_once 'Product.php';
-
-$pro = new Product();
-echo $pro->getProductType();
-$pro->setProductType('FlashDisk');
-echo "<br>";
-echo $pro->getProductType();
+    $pro = new Product();
+    echo $pro->getProductType();
+    $pro->setProductType("FlashDisk");
+    echo "<br>";
+    echo $pro->getProductType();
 ?>

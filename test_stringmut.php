@@ -1,10 +1,9 @@
 <?php
+    require_once "initialize.php";
+    use application\backend\StringMutator;
 
-require_once 'StringMutator.php';
+    $kata = new StringMutator("Dian Prawira");
+    $hasil = $kata->bold()->italic()->underscore()->getWord();
 
-$kata = new StringMutator('Dian Prawira');
-
-$hasil = $kata->bold()->italic()->underscore()->getWord();
-
-echo $hasil;
+    echo $hasil;
 ?>

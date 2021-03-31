@@ -24,7 +24,7 @@ class MyDate
 
     public function setDay($day)
     {
-        if ($day <= 31) {
+        if ($day <= 30) {
             $this->day = $day;
         } else {
             return false;

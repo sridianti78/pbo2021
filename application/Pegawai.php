@@ -4,10 +4,6 @@
 
     class Pegawai extends User
     {
-        public $nip;
-        public $nama;
-        public $no_hp;
-        public $gaji_pokok;
         protected $nip;
         protected $nama;
         protected $no_hp;
@@ -22,6 +18,7 @@
         public function tampilkanGaji(){
             echo "Jumlah gaji : $this->gaji_pokok";
         }
+        
         //setter
         public function setNip($nip){
             $this->nip=$nip;

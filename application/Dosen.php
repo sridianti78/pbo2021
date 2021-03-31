@@ -1,10 +1,11 @@
 <?php
+namespace application\backend;
 require_once ("Pegawai.php")    ;
 
 class Dosen extends Pegawai
 {
-    public $nidn;
-    public $jabatan_akademis;
+    protected $nidn;
+    protected $jabatan_akademis;
 
     function __construct($nip, $nama, $hp, $gaji,$nidn,$jabatan_akademis)
     {
@@ -49,7 +50,7 @@ class Dosen
 {
     public function ucapan()
     {
-        echo "Thank You";
+        echo "Thanks You";
     }
 }
 ?>

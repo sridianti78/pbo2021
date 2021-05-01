@@ -2,7 +2,6 @@
 
     namespace App;
     
-
     class Mahasiswa extends User{
     //atribut
         protected $nama;
@@ -14,7 +13,6 @@
         public static $status = self::AKTIF;
         public static $sks = 3;
         public static $bobot = 12;
-
 
         function __construct($nim, $nama, $tgl, $jk)
             $this->nim = $nim;

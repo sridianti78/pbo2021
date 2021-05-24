@@ -1,0 +1,16 @@
+{
+    "name": "wira/pbo2021",
+    "description": "Praktikum PBO",
+    "authors": [
+        {
+            "name": "Dian Prawira",
+            "email": "dianprawira@sisfo.untan.ac.id"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "application"
+        }
+    }
+} 

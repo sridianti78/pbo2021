@@ -28,4 +28,4 @@ class PerguruanTinggi
     public function getDosen()
     {
     }
-}
+} 

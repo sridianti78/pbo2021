@@ -14,4 +14,4 @@ class Pengguna
     public function register()
     {        
     }
-}
+)

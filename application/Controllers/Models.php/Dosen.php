@@ -56,4 +56,4 @@ public function ucapan()
     echo "Thanks You";
 }
 }
-?>
+?> 

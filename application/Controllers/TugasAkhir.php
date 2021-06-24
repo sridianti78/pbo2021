@@ -8,20 +8,7 @@ use App\Models\Mahasiswa;
 
 class TugasAkhirController extends Controller 
 {
-    public $id;
-    public $judulTA;
-    public $mahasiswaTA;
-    public $pembimbingTA;
-    public $pengujiTA;
-
-    function __construct($id, $judul, $mahasiswa, $pembimbing, $penguji)
-    {
-        $this->id = $id;
-        $this->judulTA = $judul;
-        $this->pembimbingTA = $pembimbing;
-        $this->pengujiTA = $penguji;
-    }
-
+ 
     function __construct($sc)
     {
         $this->stateCode = $sc;
